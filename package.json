@@ -1,0 +1,23 @@
+{
+  "name": "neon-vercel-rawsql",
+  "version": "0.1.0",
+  "author": "George MacKerron",
+  "license": "ISC",
+  "scripts": {
+    "update-pgtyped": "env-cmd -f .env.local pgtyped -c pgtyped-config.json"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.2.6",
+    "@pgtyped/runtime": "^2.1.0",
+    "assert": "file:shims/assert",
+    "fs": "file:shims/fs",
+    "util": "file:shims/util",
+    "wrangler": "^2.14.0"
+  },
+  "devDependencies": {
+    "@pgtyped/cli": "^2.1.0",
+    "env-cmd": "^10.1.0",
+    "typescript": "^4.9.5",
+    "vercel": "^28.18.3"
+  }
+}
