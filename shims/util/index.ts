@@ -1,1 +1,1 @@
-export const inspect = { custom: '_util_inspect_custom_' };
+export const inspect = { custom: Symbol.for('nodejs.util.inspect.custom') };
